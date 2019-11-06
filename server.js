@@ -6,13 +6,13 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.get("/api/v1/bootcamps", (req, res) => {
-  res.status(200).json({ success: true, msg: "Display all bootcamps" });
+  res.status(200).json({ success: true, msg: "Show all bootcamps" });
 });
 
 app.get("/api/v1/bootcamps/:id", (req, res) => {
   res
     .status(200)
-    .json({ success: true, msg: `Display bootcamp of id ${req.params.id}` });
+    .json({ success: true, msg: `Show bootcamp of id ${req.params.id}` });
 });
 
 app.post("/api/v1/bootcamps", (req, res) => {
