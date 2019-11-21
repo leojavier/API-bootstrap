@@ -8,6 +8,7 @@ dotenv.config({ path: "./config/config.env" });
 
 //Load Models
 const Bootcamp = require("./models/Bootcamp");
+const Bootcamp = require("./models/courses");
 
 // Connect to DB
 mongoose.connect(process.env.MONGO_URI, {
@@ -20,6 +21,11 @@ mongoose.connect(process.env.MONGO_URI, {
 // Read Json files
 const bootcamps = JSON.parse(
   fs.readFileSync(`${__dirname}/data/bootcamps.json`, "utf-8")
+);
+
+// Read Courses files
+const courses = JSON.parse(
+  fs.readFileSync(`${__dirname}/data/courses.json`, "utf-8")
 );
 
 // Import into DB

@@ -1,0 +1,17 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#222F3D",
+    "titleBar.activeBackground": "#2F4156",
+    "titleBar.activeForeground": "#F9FAFC"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.gitignore": true,
+    "node_modules": true,
+    "package-lock.json": true
+  }
+}
